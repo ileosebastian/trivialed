@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking</title>
+
+    <!-- Siempre copiar lo siguiente:  -->
+    <link rel="icon" href="../img/Icon-Principal.png">
+
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Sigmar One -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+
+    <!-- Luckiest Guy -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+    <!-- Bungee -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+    <!-- Boongaloo -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <header>
+                <div class="col-lg-1">
+
+                </div>
+                <div class="col-lg-4">
+                    <!-- Aqui va el url a HOME PAGE -->
+                    <a href="../home-page/home.html"><img id="header-logo" src="../img/Login-header.png" alt=""></a> 
+                </div>
+                <div class="col-lg-5">
+                    
+                </div>
+                <div class="col-lg-2">
+                    <div class="rectangle">
+                        <img id="user-star-header" src="../img/Star-score-header.png" alt="">
+                        <p id="user-score-header">000</p>
+                    </div>
+                    <div class="circle-user">
+                        <a href="#"><img id="user-icon" src="../img/User-icon.png" alt="User"></a>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-5">
+
+            </div>
+            <!-- Aqui va el url de esta pagina -->
+            <a href="../ranking-page/ranking.html">
+                <img src="../img/Ranking-page.png" alt="" class="col-lg-2 image-ranking">
+            </a>
+            <div class="col-lg-5">
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-1">
+
+            </div>
+            <nav class="col-lg-10">
+                <div id="navigator">
+                    <ul>
+                        <li><a href="../home-page/home.html"><img src="../img/HOME-button.png" alt=""></a></li>
+                        <li><a href="../ranking-page/ranking.html"><img src="../img/RANKING-button.png" alt=""></a></li>
+                        <li><a href="../reference-page/reference.html"><img src="../img/REFERENCIAS-button.png" alt=""></a></li>
+                        <li><a href="../friend-page/friend.html"><img src="../img/AMIGOS-button.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="col-lg-1">
+                
+            </div>
+        </div>
+
+        <div class="row div-margin-10">
+            <div class="col-lg-1">
+                
+            </div>
+            <!-- === TODO LO CONCRETO DE LA PAGINA IRA ENTRE ESE ELEMENTO MAIN: === -->
+            <main class="col-lg-10 ranking-margin-20">  
+                <div class="row">
+                    <div class="col-lg-3">
+
+                    </div>
+                    <div class="col-lg-6 nav-ranking">
+                        <button class="btn-ranking btn-facultad">
+                            <p>Facultad</p>
+                        </button>
+                        <button class="btn-ranking btn-carrera">
+                            <p>Carrera</p>
+                        </button>
+                        <button class="btn-ranking btn-asignatura">
+                            <p>Asingatura</p>
+                        </button>
+                    </div>
+                    <div class="col-lg-3">
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-2">
+
+                    </div>
+                    <div class="col-lg-8 ranking-options">
+                        <div class="container-search">
+                            <input class="browser browser-facultad" type="search" placeholder="Buscar por facultad">
+                            <img class="ico-search" src="../img/Lupa-facultad.png" alt="">
+                        </div>
+                        <div class="container-check-ranking">
+                            <input type="checkbox" class="chck-rank-facu chck-rank-carr chck-rank-asig" name="check-my-facu" id="check-ranking-my">
+                            <label for="check-my-facu">Mi facultad</label>
+                        </div>
+                        <div class="container-check-ranking">
+                            <input type="checkbox" class="chck-rank-facu chck-rank-carr chck-rank-asig" name="check-all-facu" id="check-ranking-all">
+                            <label for="check-all-facu">Todas las facultades</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+
+                    </div>
+                </div>
+
+                <div class="row div-none">
+                    <div class="col-lg-12">
+                        <div class="subject-name">
+                            <p>Administracion de base de datos</p>
+                            <img src="../img/X-icon.png" alt="Exit">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg-10 container-cards-ranking"> <!-- Contenido de cards -->
+                        <!-- <div class="row"> -->
+                            <div class="col-lg-3 center-div">
+                                <div class="container-card card-ranking ranking-facultad">
+                                    <div class="ranking-image">
+                                        <img src="../img/Person-icon.png" alt="Person Icon">
+                                    </div>
+                                    <div class="ranking-text-1">
+                                        <p>Barcia Jose</p>
+                                    </div>
+                                    <div class="ranking-conainer-score">
+                                        <img src="../img/Star-score-ranking.png" alt="Star score">
+                                        <p>55</p>
+                                    </div>
+                                    <div class="ranking-container-btn">
+                                        <a href="#">
+                                            <button class="ranking-btn">
+                                                <p>Ver perfil</p>
+                                                <img src="../img/Question-icon.png" alt="">
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 center-div">
+                                <div class="container-card card-ranking ranking-facultad">
+                                    <div class="ranking-image">
+                                        <img src="../img/Person-icon.png" alt="Person Icon">
+                                    </div>
+                                    <div class="ranking-text-1">
+                                        <p>Barcia Jose</p>
+                                    </div>
+                                    <div class="ranking-conainer-score">
+                                        <img src="../img/Star-score-ranking.png" alt="Star score">
+                                        <p>55</p>
+                                    </div>
+                                    <div class="ranking-container-btn">
+                                        <a href="#">
+                                            <button class="ranking-btn">
+                                                <p>Ver perfil</p>
+                                                <img src="../img/Question-icon.png" alt="">
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 center-div">
+                                <div class="container-card card-ranking ranking-facultad">
+                                    <div class="ranking-image">
+                                        <img src="../img/Person-icon.png" alt="Person Icon">
+                                    </div>
+                                    <div class="ranking-text-1">
+                                        <p>Barcia Jose</p>
+                                    </div>
+                                    <div class="ranking-conainer-score">
+                                        <img src="../img/Star-score-ranking.png" alt="Star score">
+                                        <p>55</p>
+                                    </div>
+                                    <div class="ranking-container-btn">
+                                        <a href="#">
+                                            <button class="ranking-btn">
+                                                <p>Ver perfil</p>
+                                                <img src="../img/Question-icon.png" alt="">
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 center-div">
+                                <div class="container-card card-ranking ranking-facultad">
+                                    <div class="ranking-image">
+                                        <img src="../img/Person-icon.png" alt="Person Icon">
+                                    </div>
+                                    <div class="ranking-text-1">
+                                        <p>Barcia Jose</p>
+                                    </div>
+                                    <div class="ranking-conainer-score">
+                                        <img src="../img/Star-score-ranking.png" alt="Star score">
+                                        <p>55</p>
+                                    </div>
+                                    <div class="ranking-container-btn">
+                                        <a href="#">
+                                            <button class="ranking-btn">
+                                                <p>Ver perfil</p>
+                                                <img src="../img/Question-icon.png" alt="">
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 center-div">
+                                <div class="container-card card-ranking ranking-facultad">
+                                    <div class="ranking-image">
+                                        <img src="../img/Person-icon.png" alt="Person Icon">
+                                    </div>
+                                    <div class="ranking-text-1">
+                                        <p>Barcia Jose</p>
+                                    </div>
+                                    <div class="ranking-conainer-score">
+                                        <img src="../img/Star-score-ranking.png" alt="Star score">
+                                        <p>55</p>
+                                    </div>
+                                    <div class="ranking-container-btn">
+                                        <a href="#">
+                                            <button class="ranking-btn">
+                                                <p>Ver perfil</p>
+                                                <img src="../img/Question-icon.png" alt="">
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                </div>
+            </main>
+            <div class="col-lg-1">
+                
+            </div>
+        </div>
+
+        <footer class="row">
+            <p class="">&copy; 2020 UTM - Todos los derechos reservados</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrivialED</title>
+
+    <link rel="icon" href="../img/Icon-Principal.png">
+
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+
+    <!-- Sigmar One -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/events/login.js"></script>
+</head>
+<body>
+    <div class="container">
+        <main class="row">
+            <section id="login-presentation" class="col-lg-12">
+                <div class="col-lg-3">
+
+                </div>
+                <div class="col-lg-6" id="images-logo">
+                    <img id="logo1" src="../img/Logo-login.png" alt="" class="col-lg-12">
+                    <img id="logo2" src="../img/Eslogan-login.png" alt="" class="col-lg-12">
+                </div>
+                <div class="col-lg-3">
+
+                </div>
+            </section> 
+
+            <section id="login-form" class="col-lg-12">
+                <div class="col-lg-4">
+
+                </div>
+                <div class="col-lg-4">
+
+                    <h3 id="text-login-form" class="row">Correo Institucional:</h3>
+
+                    <form action="../home-page/home.html" id="container-form" class="row">
+                        <input id="input-email" class="row" type="email" placeholder="Ejemplo: lintriago9549@utm.edu.ec" required>
+                        
+                        <div id="check-form" class="row">
+                            <input id="check-TermsCondit" type="checkbox" required>
+
+                            <label for="check-TermsCondit">Acepta </label>
+                            <a href="https://1drv.ms/b/s!AkGdj03WcxLTjyIXqHnYnAULv3G3" target="_blank">Terminos y Condiciones</a>
+                        </div>
+
+                        <input id="btn-login" class="row" type="submit" value="Ingresar">
+                    </form>
+                    
+                    <div id="alert-invalid-user" class="row div-none">
+                        <p>*Usuario no valido, por favor ingrese su correo UTM.</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+                    
+                </div>
+            </section>
+        </main>
+
+         
+    </div>
+</body>
+</html>
