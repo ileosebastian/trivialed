@@ -1,17 +1,15 @@
-/*=============================================
-GLOBAL
-=============================================*/
-
 *{
 	margin:0px;
 	padding:0px;
 	list-style: none;
 	text-decoration: none;
-	font-family: 'Roboto';
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 	box-sizing: border-box;
 }
 
-.contenedor{
+
+.container {
 	position:relative;
 	margin:auto;
 	width:100%;
@@ -28,30 +26,316 @@ GLOBAL
 }
 
 .div-none {
-	display: none;
+	display: none !important;
+}
+
+.center-div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.div-margin-10 {
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .div-margin-20 {
-    margin: 20px 40%;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
-.div-margin-5 {
-    margin: 20px 20%;
-}
-
-.div-margin-20-auto {
-	margin: 20px 45%;
+.default-margin {
+	margin: 0px !important;
 }
 
 [class*="col-"]{
 	float:left;
-	border:1px solid black;
-	padding:0px;
+	border:1px solid white;
+	padding: 0px;
+}
+
+/* Login */
+#logo1 {
+    height: 100px;
+    margin-left: 20px;
+}
+
+#logo2 {
+    height: 250px;
+}
+
+#login-form {
+    margin-top: 12px;
+}
+
+#text-login-form {
+    margin-left: 45px;
+    margin-bottom: 5px;
+	font-weight: 500;
+}
+
+#input-email {
+    padding-left: 15px;
+    width: 400px;
+    height: 50px;
+    margin-bottom: 1px;
+    border-radius: 8px;
+}
+
+#check-form {
+    margin-left: 30px;
+    padding-bottom: 15px;
+    width: auto;
+}
+
+#check-form input[type="checkbox"] {
+    margin-right: 10px;
 }
 
 
-/* Para los buscadores */
+#check-form label {
+    font-size: 14px;
+}
 
+#check-form a {
+    font-size: 14px;
+}
+
+#btn-login {
+    width: 400px;
+    height: 50px;
+    border-radius: 8px;
+    font-family: 'Sigmar One';
+    font-size: 36px;
+    text-align: center;
+    line-height: 46px;
+}
+
+#btn-login:hover {
+    cursor: pointer;
+}
+
+.confirm-form {
+	background-color: #24BB57;
+	color: white;
+}
+
+#alert-invalid-user {
+	margin: 5px 40px;
+	color: red;
+}
+
+
+/* Home Page */
+#header-logo {
+	width: auto;
+	height: 50px;
+	margin-top: 12px;
+	margin-left: -80px;
+}
+
+#header-logo:hover {
+	cursor: pointer;
+}
+
+.rectangle {
+	width: 200px;
+	height: 50px;
+	background: #D2D2D2;
+	margin-top: 10px;
+	border: 1px rgba(0, 0, 0, 0.9) solid;
+	border-radius: 8px;
+}
+
+#user-star-header {
+	width: 40px;
+	height: 38px;
+
+	position: relative;
+	margin: 6px 0px 6px 8px;
+}
+
+#user-score-header {
+	font-family: 'Luckiest Guy', cursive;
+	font-size: 35px;
+
+	position: absolute;
+	top: 15px;
+	right: 80px;
+}
+
+.circle-user {
+	width: 70px;
+	height: 70px;
+	background: #D2D2D2;
+	border-radius: 100%;
+
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.37);
+
+	position: absolute;
+	top: 0px;
+	right: 0px;
+
+	z-index: 1;
+}
+
+.circle-user:hover {
+	cursor: pointer;
+}
+
+#user-icon {
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.image-home {
+	height: 45px;
+	width: 140px  !important;
+
+	margin-left: 40px;
+}
+
+.image-ranking {
+	height: 45px;
+	width: 250px  !important;
+
+	margin-left: -10px;
+}
+
+.image-reference {
+	height: 45px;
+	width: 325px  !important;
+
+	margin-left: -35px;
+}
+
+.image-friend {
+	height: 45px;
+	width: 210px  !important;
+
+	margin-left: 1px;
+}
+
+.title-page-principal:hover {
+	cursor: pointer;
+}
+
+#navigator {
+	margin-top: 25px;
+	border: 0.5px solid black;
+	border-radius: 8px;
+	box-shadow: 3px 3px 3px gray;
+	padding: 10px;
+}
+
+#navigator ul{
+	list-style-type: none;
+   	text-align: center;
+}
+
+#navigator li{
+	display: inline;
+	text-align: center;
+	margin: 0 100px 0 0;
+}
+
+#navigator li:last-child {
+	margin-right: 2px;
+}
+
+#navigator li img {
+	height: 40px;
+}
+
+
+/* ============== MAIN de HOME ============== */
+.menu-home {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.btn {
+	width: 380px;
+	height: 312px;
+}
+
+.btn a button{
+	border-radius: 8px;
+	margin: 20px auto;
+	font-family: 'Bungee', cursive;
+}
+
+.btn a button:hover {
+	cursor: pointer;
+}
+
+#btn-play {
+	display: block;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding: 5px 100px;
+	font-size: 48px;
+	background-color: #6EE69B;
+}
+
+#btn-create {
+	display: block;
+	padding: 20px 80px;
+	font-size: 30px;
+	background-color: #2F6FFF;
+}
+
+#image-quiz {
+	width: 300px;
+	height: 300px;
+
+	margin-top: 10px;
+}
+
+
+/* ============== MAIN de RANKING ============== */
+.nav-ranking {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.btn-ranking {
+	border-radius: 8px;
+	padding: 5px 25px;
+}
+
+.btn-ranking:hover {
+	cursor: pointer;
+}
+
+.btn-ranking p {
+	font-family: 'Boogaloo', cursive;
+	font-size: 25px;
+	font-weight: 400;
+	color: white;
+}
+
+.btn-facultad {
+	background-color: #3F724B;
+}
+
+.btn-carrera {
+	background-color: #3A6099;
+}
+
+.btn-asignatura {
+	background-color: #E6AF57;
+}
+
+/* Browser */
 .container-search {
     width: 300px;
     vertical-align: middle;
@@ -129,6 +413,63 @@ GLOBAL
     right: 10px;
 }
 
+.ranking-options {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+
+.chck-rank-facu label{
+	color: #3F724B;
+}
+.chck-rank-carr label{
+	color: #3A6099;
+} 
+.chck-rank-asig label{
+	color: #E6AF57;
+}
+
+.container-check-ranking label {
+	font-family: 'Roboto';
+	font-weight: 500;
+	color: black;
+}
+
+
+.subject-name {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	width: 500px;
+	height: 30px;
+
+	padding: 5px 8px;
+	border-radius: 8px;
+	background-color: rgba(230, 175, 87, 0.9);;
+}
+
+.subject-name:hover {
+	cursor: pointer;
+}
+
+.subject-name p {
+	font-family: 'Roboto';
+	font-weight: 400;
+	color: white;
+}
+
+.subject-name img {
+	margin-left: 20px;
+}
+
+.subject-name img:hover {
+	padding: 5px;
+	background-color: red;
+	border-radius: 8px;
+}
+
 
 
 /* Para todas las cards */
@@ -140,6 +481,8 @@ GLOBAL
 	/* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
 	box-shadow: 2px 2px 5px 0.5px;
 	text-align: center;
+
+	margin: 20px auto;
 }
 
 
@@ -150,9 +493,7 @@ GLOBAL
 	box-shadow: 2px 2px 5px 0.5px rgba(0, 0, 0, 0.8);
 
 	padding-top: 8px;
-	padding-bottom: 8px;
-
-	
+	padding-bottom: 8px;	
 }
 
 .card-ranking div {
@@ -272,6 +613,19 @@ GLOBAL
 }
 
 
+.container-cards-ranking {
+	width: 500px;
+	height: auto;
+}
+
+.ranking-margin-20 > div{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+
+/* ============== MAIN de REFERENCE ============== */
 /* Para cards de referencias */
 .card-reference {
 	width: 175px;
@@ -374,7 +728,7 @@ GLOBAL
 	color: white;
 
 	margin-left: -8px;
-	margin-top: 2px;
+	margin-top: 1px;
 }
 
 .btn-review img {
@@ -414,7 +768,18 @@ GLOBAL
 	margin-bottom: -2px !important;
 }
 
+#reference-title {
+	font-family: 'Bungee';
+	font-size: 20px;
+}
 
+.reference-margin-10 > div {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+/* ============== MAIN de REFERENCE ============== */
 /* Para cards de amigos */
 .card-friend {
 	width: 375px;
@@ -536,27 +901,106 @@ GLOBAL
 	margin-left: 15px;
 }
 
-/* Botones para pagina previa */
-.prev-btn {
-	border: 1px solid black; 
-	padding: 15px 20px 15px 20px;
-	border-radius: 100%;
 
-	font-size: 16px;
+.btn-add-friend {
+	width: 220px;
+	height: 40px;
+	border-radius: 8px;
+	padding: 8px 0px 32px 0px;
+
+	background-color: #6EE69B;
 }
 
-.prev-btn:hover {
+.btn-add-friend:hover {
 	cursor: pointer;
-
-	box-shadow: 2px 2px 5px 0.5px rgba(0, 0, 0, 0.8);
+	box-shadow: 2px 2px 5px 0.5px rgba(110,230,155,1);
 }
 
+.btn-add-friend p {
+	 font-family: 'Luckiest Guy';
+	 font-size: 20px;
+	 color: white;
+}
+
+.friend-margin-20 > div {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 
 
 /* menu desplegable */
+.nav-menu-user {
+    width: 200px;
+    height: 125px;
+
+    border: 1px solid black;
+    border-radius: 8px 0px 8px 8px;
+    background-color: #DEDEDE;
+
+    position: absolute;
+    top: 60px;
+    right: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1;
+}
+
+.nav-menu-user ul li {
+    width: 150px;
+    height: 25px;
+
+    border: 0.1px solid black;
+    border-radius: 8px;
+    background-color: #DEDEDE;
+
+    margin: 5px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-menu-user ul li:hover {
+    cursor: pointer;
+}
+
+.nav-menu-user ul li a {
+    font-family: 'Bungee';
+    font-size: 12px;
+    color: black;
+}
+
+
+.nav-menu-user ul li:last-child {
+    border: 0.1px solid #C83C3C;
+}
+
+.nav-menu-user ul li:last-child a {
+    color: #C83C3C;
+}
 
 
 
+footer {
+    position:relative;
+	margin:35px auto 20px auto;
+	height:115px;
+	background: url("../img/Fondo-allPages.png"); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+	text-align: center;
+	line-height: 115px;
+	color:black;
+}
+
+footer p {
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: bold;
+}
 
 
 /*=============================================
@@ -579,8 +1023,6 @@ PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) - revisamos en portatil o pc
 	.col-lg-1 {width: 8.33333333%;}
 
 }
-
-
 
 /*=============================================
 PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 1024px

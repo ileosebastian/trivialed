@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="../css/style.css">
 
     <script src="../js/jquery-3.6.0.min.js"></script>
-    <script src="../js/events/login.js"></script>
+    <script src="../js/login.js"></script>
 </head>
 <body>
     <div class="container">
@@ -46,9 +46,9 @@
                 <div class="col-lg-4">
 
                     <h3 id="text-login-form" class="row">Correo Institucional:</h3>
-
-                    <form action="../home-page/home.html" id="container-form" class="row">
-                        <input id="input-email" class="row" type="email" placeholder="Ejemplo: lintriago9549@utm.edu.ec" required>
+                    <!-- ../../backend/php/validate-user.php  method="POST"-->
+                    <form id="container-form" class="row">
+                        <input name="user" id="input-email" class="row" type="email" placeholder="Ejemplo: lintriago9549@utm.edu.ec" required>
                         
                         <div id="check-form" class="row">
                             <input id="check-TermsCondit" type="checkbox" required>
@@ -71,7 +71,9 @@
             </section>
         </main>
 
-         
+        <footer class="row">
+            <p class="">&copy; 2020 UTM - Todos los derechos reservados</p>
+        </footer>
     </div>
 </body>
 </html>
