@@ -15,13 +15,13 @@ $(() => {
     $('.nav-menu-user ul li').on('mouseenter', function() {
         $(this).css('background-color', '#000000');
         $(this).children().css('color', "white");
-        console.log("Entra");
+        //console.log("Entra");
     });
 
     $('.nav-menu-user ul li').on('mouseleave', function() {
         $(this).css('background-color', '#DEDEDE');
         $(this).children().css('color', "black");
-        console.log("Sale");
+        //console.log("Sale");
     });
 
     $('.nav-menu-user ul li').last().on('mouseenter', function() {

@@ -54,20 +54,20 @@
 	margin: 0px !important;
 }
 
-[class*="col-"]{
-	float:left;
-	border:1px solid transparent;
+[class*="col-"] {
+	float: left;
+	border: 1px solid transparent;
 	padding: 0px;
 }
 
 /* Login */
 #logo1 {
-    height: 100px;
+    height: 120px;
     margin-left: 20px;
 }
 
 #logo2 {
-    height: 250px;
+    height: 265px;
 }
 
 #login-form {
@@ -226,6 +226,13 @@
 	width: 210px  !important;
 
 	margin-left: 1px;
+}
+
+.image-create {
+	height: 60px;
+	width: 300px  !important;
+
+	margin-left: -35px;
 }
 
 .title-page-principal:hover {
@@ -1023,7 +1030,7 @@
 .profile-image {
 	display: flex;
 	align-items: center;
-	justify-content: right;
+	justify-content: flex-end;
 }
 
 .profile-image img{
@@ -1090,6 +1097,130 @@
 	margin-bottom: 15px;
 }
 
+.btn-exit-sesion {
+	border-radius: 8px;
+	padding: 5px 10px;
+
+	background-color: #E73D3D;
+}
+
+.btn-exit-sesion:hover {
+	cursor: pointer;
+}
+
+.btn-exit-sesion p {
+	font-family: 'Bungee';
+	color: white;
+	
+	margin-left: 8px;
+}
+
+
+/* Para escenario de creacion de Quiz */
+
+/* ============== MAIN de QUESTION ============== */
+.text-level {
+	font-family: 'Bungee';
+	font-size: 25px;
+	margin-bottom: -10px;
+	margin-left: 50px;
+}
+
+.btn-level p {
+	font-family: 'Bungee';
+	font-size: 28px;
+	color: #EC9E2A;
+
+	margin-top: -20px;
+	margin-bottom: -20px;
+}
+
+.btn-level {
+	background-color: white;
+	border: 0.1px solid #EC9E2A;;
+	border-radius: 8px;
+
+	padding: 10px 15px;
+
+	margin: 0px 20px;
+}
+
+.btn-level:hover {
+	cursor: pointer;
+} 
+
+.level-hover {
+	background-color: #EC9E2A;
+	border: 0.1px solid #EC9E2A;
+}
+
+.switch-hover-level {
+	background-color: #EC9E2A;
+	border: 0.1px solid #EC9E2A;
+}
+
+
+.switch-hover-level-txt {
+	color: white !important;
+}
+
+.find-subject-image {
+	width: 300px;
+	height: 150px;
+}
+
+.subject img {
+	width: 260px;
+	height: 160px;
+	border-radius: 8px 8px 0px 0px;
+}
+
+.subject p {
+	font-family: 'Ubuntu';
+	font-weight: 500;
+	font-size: 25px;
+	color: white;
+
+	margin: 10px;
+}
+
+.subject {
+	width: 261px;
+	height: 245px;
+
+	border: 0.1px solid black;
+	border-radius: 8px;
+	background-color: #EC9E2A;
+}
+
+.subject:hover {
+	cursor: pointer;
+
+	box-shadow: 2px 4px 4px rgba(236,158,42,1);
+}
+
+.subject-level p {
+	font-size: 15px;
+}
+
+.subject-level {
+	position: absolute;
+	top: 145px;
+	left: 85px;
+
+	border: 3px solid #EC9E2A;
+	box-sizing: border-box;
+	border-radius: 25px;
+	background-color: #EC9E2A;
+}
+
+/* Para escenario de Jugar */
+
+/* ============== MAIN de SELECT-QUESTION ============== */
+
+
+
+
 
 footer {
     position:relative;
@@ -1128,6 +1259,9 @@ PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) - revisamos en portatil o pc
 	.col-lg-3{width: 25%;}
 	.col-lg-2 {width: 16.66666667%;}
 	.col-lg-1 {width: 8.33333333%;}
+
+	.col-lg-1-nav-subjects {width: 10%;}
+	.col-lg-1-nav-quest-refer {width: 20%;}
 
 }
 

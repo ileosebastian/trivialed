@@ -37,6 +37,7 @@
 
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/config-user.js"></script>
+    <script src="../js/ranking.js"></script>
 </head>
 <body>
     <div class="container">
@@ -114,13 +115,13 @@
 
                     </div>
                     <div class="col-lg-6 nav-ranking">
-                        <button class="btn-ranking btn-facultad">
+                        <button class="btn-ranking btn-facultad" data-action="0">
                             <p>Facultad</p>
                         </button>
-                        <button class="btn-ranking btn-carrera">
+                        <button class="btn-ranking btn-carrera" data-action="1">
                             <p>Carrera</p>
                         </button>
-                        <button class="btn-ranking btn-asignatura">
+                        <button class="btn-ranking btn-asignatura" data-action="2">
                             <p>Asingatura</p>
                         </button>
                     </div>
@@ -135,16 +136,18 @@
                     </div>
                     <div class="col-lg-8 ranking-options">
                         <div class="container-search">
-                            <input class="browser browser-facultad" type="search" placeholder="Buscar por facultad">
-                            <img class="ico-search" src="../img/Lupa-facultad.png" alt="">
+                            <input id="browser-rank" class="browser" type="search" placeholder="Buscar por">
+                            <img id="ico-facu" class="ico-search div-none" src="../img/Lupa-facultad.png" alt="">
+                            <img id="ico-carr" class="ico-search div-none" src="../img/Lupa-carrera.png" alt="">
+                            <img id="ico-asig" class="ico-search div-none" src="../img/Lupa-asignatura.png" alt="">
                         </div>
                         <div class="container-check-ranking">
-                            <input type="checkbox" class="chck-rank-facu chck-rank-carr chck-rank-asig" name="check-my-facu" id="check-ranking-my">
-                            <label for="check-my-facu">Mi facultad</label>
+                            <input type="checkbox" class="" name="check-my-facu" id="check-ranking-my">
+                            <label for="check-my-facu"></label>
                         </div>
                         <div class="container-check-ranking">
-                            <input type="checkbox" class="chck-rank-facu chck-rank-carr chck-rank-asig" name="check-all-facu" id="check-ranking-all">
-                            <label for="check-all-facu">Todas las facultades</label>
+                            <input type="checkbox" class="" name="check-all-facu" id="check-ranking-all">
+                            <label for="check-all-facu"></label>
                         </div>
                     </div>
                     <div class="col-lg-2">
@@ -165,7 +168,7 @@
                     <div class="col-lg-1">
 
                     </div>
-                    <div class="col-lg-10 container-cards-ranking"> <!-- Contenido de cards -->
+                    <div class="col-lg-10 container-cards-ranking canvas-card"> <!-- Contenido de cards -->
                         <!-- <div class="row"> -->
                             <div class="col-lg-3 center-div">
                                 <div class="container-card card-ranking ranking-facultad">
@@ -189,94 +192,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 center-div">
-                                <div class="container-card card-ranking ranking-facultad">
-                                    <div class="ranking-image">
-                                        <img src="../img/Person-icon.png" alt="Person Icon">
-                                    </div>
-                                    <div class="ranking-text-1">
-                                        <p>Barcia Jose</p>
-                                    </div>
-                                    <div class="ranking-conainer-score">
-                                        <img src="../img/Star-score-ranking.png" alt="Star score">
-                                        <p>55</p>
-                                    </div>
-                                    <div class="ranking-container-btn">
-                                        <a href="#">
-                                            <button class="ranking-btn">
-                                                <p>Ver perfil</p>
-                                                <img src="../img/Question-icon.png" alt="">
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 center-div">
-                                <div class="container-card card-ranking ranking-facultad">
-                                    <div class="ranking-image">
-                                        <img src="../img/Person-icon.png" alt="Person Icon">
-                                    </div>
-                                    <div class="ranking-text-1">
-                                        <p>Barcia Jose</p>
-                                    </div>
-                                    <div class="ranking-conainer-score">
-                                        <img src="../img/Star-score-ranking.png" alt="Star score">
-                                        <p>55</p>
-                                    </div>
-                                    <div class="ranking-container-btn">
-                                        <a href="#">
-                                            <button class="ranking-btn">
-                                                <p>Ver perfil</p>
-                                                <img src="../img/Question-icon.png" alt="">
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 center-div">
-                                <div class="container-card card-ranking ranking-facultad">
-                                    <div class="ranking-image">
-                                        <img src="../img/Person-icon.png" alt="Person Icon">
-                                    </div>
-                                    <div class="ranking-text-1">
-                                        <p>Barcia Jose</p>
-                                    </div>
-                                    <div class="ranking-conainer-score">
-                                        <img src="../img/Star-score-ranking.png" alt="Star score">
-                                        <p>55</p>
-                                    </div>
-                                    <div class="ranking-container-btn">
-                                        <a href="#">
-                                            <button class="ranking-btn">
-                                                <p>Ver perfil</p>
-                                                <img src="../img/Question-icon.png" alt="">
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 center-div">
-                                <div class="container-card card-ranking ranking-facultad">
-                                    <div class="ranking-image">
-                                        <img src="../img/Person-icon.png" alt="Person Icon">
-                                    </div>
-                                    <div class="ranking-text-1">
-                                        <p>Barcia Jose</p>
-                                    </div>
-                                    <div class="ranking-conainer-score">
-                                        <img src="../img/Star-score-ranking.png" alt="Star score">
-                                        <p>55</p>
-                                    </div>
-                                    <div class="ranking-container-btn">
-                                        <a href="#">
-                                            <button class="ranking-btn">
-                                                <p>Ver perfil</p>
-                                                <img src="../img/Question-icon.png" alt="">
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         <!-- </div> -->
                     </div>
                     <div class="col-lg-1">
