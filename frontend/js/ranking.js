@@ -8,11 +8,14 @@ $(() => {
 
     var index = 3;
 
+    $( '.ranking-options' ).addClass('div-none');
+
     $('.btn-facultad').on('click', function(event) {
         event.stopPropagation();
         index = parseInt($(this).data('action'), 10);
 
-        alert(actions[index]);
+        // alert(actions[index]);
+        $( '.ranking-options' ).removeClass('div-none');
 
         $('.ico-search').addClass('div-none');
         $('.container-check-ranking input[type="checkbox"]').prop("checked",false);
@@ -31,7 +34,8 @@ $(() => {
         event.stopPropagation();
         index = parseInt($(this).data('action'), 10);
 
-        alert(actions[index]);
+        // alert(actions[index]);
+        $( '.ranking-options' ).removeClass('div-none');
 
         $('.ico-search').addClass('div-none');
         $('.container-check-ranking input[type="checkbox"]').prop("checked",false);
@@ -50,7 +54,9 @@ $(() => {
         event.stopPropagation();
         index = parseInt($(this).data('action'), 10);
 
-        alert(actions[index]);
+
+        // alert(actions[index]);
+        $( '.ranking-options' ).removeClass('div-none');
 
         $('.ico-search').addClass('div-none');
 
